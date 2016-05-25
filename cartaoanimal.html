@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta id="MetaDescription" name="DESCRIPTION" content="Cartão Vacina Online">
+    <meta id="MetaKeywords" name="KEYWORDS" content="Cartão Vacina Online">
+    <title>Cadastro - Cartão Vacina Online</title>
+    <link rel="stylesheet" type="text/css" href="css/skin.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script>
+
+</head>
+
+<body>
+    <section class="register">
+        <from>
+            <label for="imageanimal" class="imageanimal">
+                <img src="images/animal.jpg" />
+                <br />
+                <b>ID: 0001</b>
+            </label>
+            <label for="nameanimal">
+                Nome: <input name="nomeanimal" type="text" placeholder="Nome do Animal" class="nomeanimal" />
+            </label>
+            <br /><br />
+            <label for="sexo">
+                Sexo:  <input name="sexo" type="radio" value="male" /> Macho  <input name="sexo" type="radio" value="female" /> Fêmia
+            </label>
+            <br /><br />
+            <label for="raca">
+                Raça: <select>
+                    <option value="raca1">Raça 1</option>
+                    <option value="raca2">Raça 2</option>
+                    <option value="raca3">Raça 3</option>
+                    <option value="raca4">Raça 4</option>
+                </select>
+            </label>
+            <label for="especie">
+                Espécie: <select>
+                    <option value="especie1">Espécie 1</option>
+                    <option value="especie2">Espécie 2</option>
+                    <option value="especie3">Espécie 3</option>
+                    <option value="especie4">Espécie 4</option>
+                </select>
+            </label>
+            <label for="porte">
+                Porte: <select>
+                    <option value="porte1">Porte 1</option>
+                    <option value="porte2">Porte 2</option>
+                    <option value="porte3">Porte 3</option>
+                    <option value="porte4">Porte 4</option>
+                </select>
+            </label>
+            <label for="pelagem">
+                Pelagem: <select>
+                    <option value="pelagem1">Pelagem 1</option>
+                    <option value="pelagem2">Pelagem 2</option>
+                    <option value="pelagem3">Pelagem 3</option>
+                    <option value="pelagem4">Pelagem 4</option>
+                </select>
+            </label>
+            <br /><br />
+            <label for="peso">
+                Peso:   <input name="peso" type="text" placeholder="Peso KG" />
+                <br /><br />
+            </label>Data Nacimento: <input type="text" id="datepicker">
+            <br />    
+            Idade: <b> 0000 Anos</b>
+            <br /><br />
+            <a href="cadastroanimal.html"><input type="submit" value="Editar" class="btn" name="editanimal" /></a>
+            <input type="submit" value="Gravar" class="btn" name="saveanimal" />
+            <input type="submit" value="Excluir" class="btn" name="deleteanimal" />
+            <input type="submit" value="Upload" class="btn" name="uploadcard" />
+            <input type="submit" value="Gerar Cartão" class="btn" name="generatecard" />
+            <div style="clear:both"></div>
+        </from>
+    </section>
+
+    <footer>
+        © 2016 RILDO INFORMÁTICA LTDA
+    </footer>
+
+</body>
+</html>
